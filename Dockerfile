@@ -50,7 +50,7 @@ WORKDIR /app
 
 RUN chmod +w /set_root_pw.sh
 #添加运行脚本
-RUN echo "/app/jiankong/run.sh" >>/set_root_pw.sh
+RUN echo "/jiankong/run.sh" >>/set_root_pw.sh
 #RUN echo "cron start" >>/set_root_pw.sh
 RUN echo "service nginx start" >>/set_root_pw.sh
 RUN echo "service nginx reload" >>/set_root_pw.sh
