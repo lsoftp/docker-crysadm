@@ -24,8 +24,8 @@ RUN git clone https://github.com/lsoftp/jiangong.git
 
 #安装python，redis
 RUN apt-get install -y python3.4 python3.4-dev redis-server
-RUN chmod +x ./jiankong/get-pip.py
-RUN python3.4 ./jiankong/get-pip.py
+RUN chmod +x ./jiankong/crysadm/get-pip.py
+RUN python3.4 ./jiankong/crysadm/get-pip.py
 RUN pip3.4 install redis && sudo pip3.4 install requests && sudo pip3.4 install flask
 
 #复制配置文件
